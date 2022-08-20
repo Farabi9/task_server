@@ -18,6 +18,7 @@ async function run(){
  try{
       await client.connect();
      const serviceCollection = client.db('ed-tech').collection('services')
+     const homeService = client.db('ed-tech').collection('home_service')
 
 
      app.get('/service', async(req, res) =>{
